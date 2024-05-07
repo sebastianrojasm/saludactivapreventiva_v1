@@ -1,0 +1,89 @@
+/* Estilos para el formulario de registro */
+
+/* Estilos generales para la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado de la página */
+.encabezado-pagina {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.encabezado-pagina .logo-salud {
+    font-size: 24px;
+}
+
+/* Contenedor principal del formulario */
+.contenedor-formulario {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Título del formulario */
+.titulo-formulario {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para grupos de campos del formulario */
+.grupo-formulario {
+    margin-bottom: 20px;
+}
+
+.grupo-formulario label {
+    display: block;
+    font-weight: bold;
+}
+
+.grupo-formulario input,
+.grupo-formulario select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilos para el texto "*" en todo el formulario */
+.ayuda-campo-formulario {
+    color: red; /* Cambia el color del asterisco a rojo */
+    font-weight: bold; /* Aplica negrita al asterisco */
+    font-size: 1.2em; /* Ajusta el tamaño del asterisco */
+}
+
+
+/* Estilos para el botón de envío */
+.grupo-formulario input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.grupo-formulario input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el pie de página */
+.login {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.login a {
+    color: #007bff;
+    text-decoration: none;
+}

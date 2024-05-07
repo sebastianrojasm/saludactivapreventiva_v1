@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro Salud Activa Preventiva</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <header class="encabezado-pagina">
+        <div class="logo-salud"><span>Salud Activa Preventiva</span></div>
+    </header>
+    <main class="contenedor-formulario">
+        <h1 class="titulo-formulario">Registro de Usuario</h1>
+        <form id="formulario-registro" class="formulario-horizontal" action="https://sso.meds.cl/auth/realms/clinicameds/login-actions/registration?session_code=nspGaYHfmuGkyIZNEWubT6t3u2MSI6qkR8dl-qdlQQc&amp;execution=976c6210-d458-4dc6-8e63-483b5161910b&amp;client_id=app-meds&amp;tab_id=FZDC6rEOjM0" method="post">
+            <div class="grupo-formulario">
+                <label for="tipo-documento">Tipo de Documento:</label><br>
+                <input type="radio" id="rut" name="tipo-documento" value="rut" checked>
+                <label for="rut">RUT</label><br>
+                <input type="radio" id="pasaporte" name="tipo-documento" value="pasaporte">
+                <label for="pasaporte">Pasaporte</label><br>
+            </div>
+            <div class="grupo-formulario">
+                <label for="usuario">Usuario:</label><br>
+                <input type="text" id="usuario" name="usuario" placeholder="Ej: 13546226-K" required>
+                <span class="ayuda-campo-formulario">*</span>
+            </div>
+            <div class="grupo-formulario">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                <span class="ayuda-campo-formulario">*</span>
+            </div>
+            <div class="grupo-formulario">
+                <label for="apellido-paterno">Apellido Paterno:</label><br>
+                <input type="text" id="apellido-paterno" name="apellido-paterno" placeholder="Apellido Paterno" required>
+                <span class="ayuda-campo-formulario">*</span>
+            </div>
+            <div class="grupo-formulario">
+                <label for="apellido-materno">Apellido Materno:</label><br>
+                <input type="text" id="apellido-materno" name="apellido-materno" placeholder="Apellido Materno" required>
+                <span class="ayuda-campo-formulario">*</span>
+            </div>
+            <div class="grupo-formulario">
+                <label for="telefono">Teléfono:</label><br>
+                <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required>
+                <span class="ayuda-campo-formulario">*</span>
+            </div>
+            <div class="grupo-formulario">
+                <label for="email">Correo Electrónico:</label><br>
+                <input type="email" id="email" name="email" placeholder="Correo Electrónico" required>
+            </div>
+            <div class="grupo-formulario">
+                <label for="genero">Género:</label><br>
+                <select id="genero" name="genero" required>
+                    <option value="">Elegir</option>
+                    <option value="m">Masculino</option>
+                    <option value="f">Femenino</option>
+                    <option value="o">Otro</option>
+                </select>
+                <span class="ayuda-campo-formulario">*</span>
+            </div>
+            <div class="grupo-formulario">
+                <label for="fecha-nacimiento">Fecha de Nacimiento:</label><br>
+                <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+                <span class="ayuda-campo-formulario">*</span>
+            </div>
+            <div class="grupo-formulario">
+                <label for="direccion">Dirección:</label><br>
+                <input type="text" id="direccion" name="direccion" placeholder="Ingrese su dirección" required>
+                <span class="ayuda-campo-formulario">*</span>
+            </div>
+            <div class="grupo-formulario">
+                <label for="region">Región:</label><br>
+                <select id="region" name="region" required>
+                    <option value="">Seleccionar Región</option>
+                    <option value="Arica y Parinacota">Arica y Parinacota</option>
+                    <option value="Tarapacá">Tarapacá</option>
+                    <option value="Antofagasta">Antofagasta</option>
+                    <option value="Atacama">Atacama</option>
+                    <option value="Coquimbo">Coquimbo</option>
+                    <option value="Valparaíso">Valparaíso</option>
+                    <option value="Región del Libertador Gral. Bernardo O’Higgins">Región del Libertador Gral. Bernardo O’Higgins</option>
+                    <option value="Región del Maule">Región del Maule</option>
+                    <option value="Región del Biobío">Región del Biobío</option>
+                    <option value="Región de la Araucanía">Región de la Araucanía</option>
+                    <option value="Región de Los Ríos">Región de Los Ríos</option>
+                    <option value="Región de Los Lagos">Región de Los Lagos</option>
+                    <option value="Región Aisén del Gral. Carlos Ibáñez del Campo">Región Aisén del Gral. Carlos Ibáñez del Campo</option>
+                    <option value="Región de Magallanes y de la Antárica Chilena">Región de Magallanes y de la Antárica Chilena</option>
+                    <option value="Región Metropolitana de Santiago">Región Metropolitana de Santiago</option>
+                </select>
+                <span class="ayuda-campo-formulario">*</span>
+            </div>
+            <div class="grupo-formulario">
+                <label for="comuna">Comuna:</label><br>
+                <input type="text" id="comuna" name="comuna" placeholder="Ingrese su Comuna" required>
+                <span class="ayuda-campo-formulario">*</span>
+            </div>
+
+            <div class="grupo-formulario">
+                <label for="contrasena">Contraseña:</label><br>
+                <input type="password" id="contrasena" name="contrasena" required>
+                <span class="ayuda-campo-formulario">*</span>
+            </div>
+            <div class="grupo-formulario">
+                <label for="confirmar-contrasena">Confirmar Contraseña:</label><br>
+                <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" required>
+                <span class="ayuda-campo-formulario">*</span>
+            </div>
+            
+            <!-- Botón de envío -->
+            <div class="grupo-formulario">
+                <input type="submit" value="Registrar">
+            </div>
+            <!-- Fin Botón de envío -->
+        </form>
+    </main>
+    <footer class="login">
+        <a href="#">Volver</a>
+    </footer>
+</body>
+</html>
+

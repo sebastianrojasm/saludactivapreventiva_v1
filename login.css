@@ -1,0 +1,76 @@
+/* Estilos para el formulario de inicio de sesión */
+
+/* Estilos para el cuerpo de la página */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para el contenedor principal del formulario */
+.login-contenedor {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+/* Estilos para la ilustración/icono de cerradura */
+.login-contenedor .ilustracion {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-contenedor .ilustracion img {
+    width: 80px;
+}
+
+/* Estilos para los elementos del formulario */
+.login-contenedor .formulario .grupo {
+    margin-bottom: 20px;
+}
+
+.login-contenedor .formulario .grupo label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.login-contenedor .formulario .grupo input[type="email"],
+.login-contenedor .formulario .grupo input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-contenedor .formulario .grupo button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-contenedor .formulario .grupo button:hover {
+    background-color: #0056b3;
+}
+
+.login-contenedor .formulario .olvidado {
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Estilos para mostrar errores de validación */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
